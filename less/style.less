@@ -1,0 +1,88 @@
+/* =====***** common css starts *****===== */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  ul {
+      list-style: none;
+  }
+  
+  img {
+      vertical-align: middle;
+  }
+  /* =====***** common css ends *****===== */
+
+  /* variable starts */
+  @brandcolor:#de4644;
+  @fontcolor: #222222;
+  @ralewayfont: 'Raleway', sans-serif;
+  /* variable ends */
+
+  /* =====***** header css starts *****===== */
+  #header-bg {
+      background: #444444;
+  }
+  /* =====***** header css ends *****===== */
+  
+  /* =====***** banner css starts *****===== */
+  .navbar {
+      background: #ffffff;
+      .navbar-brand {
+          margin-right: 180px;;
+      }
+      .navbar-nav {
+          margin-left: 220px;
+          .nav-item {
+              line-height: 24px;
+              margin-right: 10px;
+              .nav-link {
+                margin: 8px 12px;
+                font-family: @ralewayfont;
+                font-weight: 500;
+                color: #222222;
+                position: relative;
+                &::after {
+                    content:'';
+                    width: 0%;
+                    height: 1px;
+                    background: #de4644;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                &:hover::after {
+                    width: 100%;
+                    transition: all linear 0.5s;
+                }
+              }
+             button {
+                 margin-left: 200px;
+                 border: 0;
+                 background: none;
+                 padding: 8px 0px;
+                 i {
+                     font-size: 18px;
+                 }
+             }
+             i {
+                padding: 8px 5px;
+                font-size: 18px;
+                line-height: 24px;
+             }
+             p{
+                padding: 8px 5px;
+                font-size: 18px;
+                line-height: 24px;
+                font-family: @ralewayfont;
+                font-weight: 500;
+             }
+          }
+      }
+  }
+  /* =====***** banner css ends *****===== */
+  
