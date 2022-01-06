@@ -398,6 +398,9 @@ img {
   left: 35px;
   bottom: -25px;
 }
+#products-bg .item {
+  margin-bottom: 50px;
+}
 #products-bg .item .img-section {
   overflow: hidden;
   position: relative;
