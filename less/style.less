@@ -21,19 +21,60 @@
   @brandcolor:#de4644;
   @fontcolor: #222222;
   @ralewayfont: 'Raleway', sans-serif;
+  @opensans: 'Open Sans', sans-serif;
   /* variable ends */
 
   /* =====***** header css starts *****===== */
   #header-bg {
       background: #444444;
+      .item {
+          ul {
+              padding-left: 0 !important;
+              display: flex;
+              margin-bottom: 0;
+              li {
+                  font-family: @ralewayfont;
+                  font-weight: 500;
+                  font-size: 13px;
+                  line-height: 24px;
+                  color: #dddddd;
+                  text-transform: capitalize;
+                  padding: 12px 15px;
+                  text-transform: capitalize;
+                  border-right: 1px solid #ddd;
+                a {
+                   line-height: 24px;
+                   font-family: @ralewayfont;
+                   font-weight: 500;
+                   font-size: 13px;
+                   color: #dddddd;
+                   text-transform: capitalize;
+                   padding: 18px 20px;
+                   &:last-of-type {
+                    padding-right: 0;
+                }
+                }
+                &:first-of-type {
+                    padding-left: 0;
+                    border: 0;
+                }
+                &:last-of-type {
+                    padding-right: 0;
+                    border: 0;
+                }
+              }
+          }
+      }
   }
   /* =====***** header css ends *****===== */
   
-  /* =====***** banner css starts *****===== */
+  /* =====***** navbar css starts *****===== */
   .navbar {
       background: #ffffff;
+      padding: 0;
+      padding-top: 35px;
       .navbar-brand {
-          margin-right: 180px;;
+          margin-right: 180px;
       }
       .navbar-nav {
           margin-left: 220px;
@@ -41,11 +82,13 @@
               line-height: 24px;
               margin-right: 10px;
               .nav-link {
-                margin: 8px 12px;
+                margin: 8px 10px;
                 font-family: @ralewayfont;
                 font-weight: 500;
                 color: #222222;
+                text-transform: capitalize;
                 position: relative;
+                transition: all linear 0.5s;
                 &::after {
                     content:'';
                     width: 0%;
@@ -59,9 +102,13 @@
                     width: 100%;
                     transition: all linear 0.5s;
                 }
+                &:hover {
+                  color: #de4644;
+                }
               }
              button {
                  margin-left: 200px;
+                 margin-right: 20px;
                  border: 0;
                  background: none;
                  padding: 8px 0px;
@@ -70,7 +117,7 @@
                  }
              }
              i {
-                padding: 8px 5px;
+                padding: 8px 0px;
                 font-size: 18px;
                 line-height: 24px;
              }
@@ -81,8 +128,239 @@
                 font-family: @ralewayfont;
                 font-weight: 500;
              }
+             &:last-of-type {
+                 margin-top: 5px;
+                 color: @brandcolor;
+             }
           }
       }
   }
+  /* =====***** navbar css ends *****===== */
+
+
+  /* =====***** banner css starts *****===== */
+  #banner-bg {
+      position: relative;
+      z-index: 1;
+      margin-top: 30px;
+      .item {
+          position: relative;
+          height: 600px;
+          z-index: 1;
+          &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 60%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+          }
+      }
+      .item-1 {
+        background: url(../images/banner-img.png) no-repeat center / cover;
+      }
+      .item-2 {
+        background: url(../images/banner-item-2.jpg) no-repeat center / cover;
+      }
+      .item-3 {
+        background: url(../images/banner-item-3.jpg) no-repeat center / cover;
+      }
+      .item-4 {
+        background: url(../images/banner-item-4.jpg) no-repeat center / cover;
+      }
+      .item-5 {
+        background: url(../images/banner-item-5.jpg) no-repeat center / cover;
+      }
+        .banner-text {
+            h2 {
+              font-family: @ralewayfont;
+              font-weight: 700;
+              color: @brandcolor;
+              font-size: 70px;
+              line-height: 24px;
+              text-transform: capitalize;
+              padding-top: 150px;
+              span {
+                  font-size: 100px;
+              }
+            }
+            h3 {
+              font-family: @ralewayfont;
+              font-weight: 400;
+              color: #ddd;
+              font-size: 70px;
+              line-height: 24px;
+              text-transform: capitalize;
+              padding-top: 50px;
+            }
+            p {
+              font-family: @ralewayfont;
+              font-weight: 400;
+              color: #ddd;
+              font-size: 14px;
+              line-height: 24px;
+              text-transform: capitalize;
+              padding-top: 30px;
+              padding-right: 40px;
+            }
+            a {
+                display: inline-block;
+              font-family: @ralewayfont;
+              font-weight: 400;
+              color: #ddd;
+              background: @brandcolor;
+              font-size: 16px;
+              line-height: 24px;
+              text-transform: capitalize;
+              padding: 17px 30px;
+              border: 1px solid @brandcolor;
+              margin-right: 30px;
+              transition: all linear 0.5s;
+              margin-top: 50px;
+              margin-bottom: 150px;
+              &:hover {
+                  background: transparent;
+                  border-color: @brandcolor;
+              }
+            }
+      }
+      .prevarrow {
+        position: absolute;
+        top: 50%;
+        left: 60px;
+        transform: translateY(-50%);
+        color:white;
+        z-index: 99;
+        font-size: 32px;
+        padding: 10px 20px;
+        border: 2px solid #de4644;
+        border-radius: 50%;
+        transition: all linear 0.5s;
+        &:hover {
+          color: @brandcolor;
+          border-color: white;
+        }
+      }
+      .nextarrow {
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        transform: translateY(-50%);
+        color:white;
+        z-index: 99;
+        font-size: 32px;
+        padding: 10px 20px;
+        border: 2px solid #de4644;
+        border-radius: 50%;
+        transition: all linear 0.5s;
+        &:hover {
+          color: @brandcolor;
+          border-color: white;
+        }
+      }
+  }
   /* =====***** banner css ends *****===== */
-  
+
+  /* =====***** offer css starts *****===== */
+  #offer-bg {
+    background: #f1f1f1;
+    .item {
+      padding: 20px 0;
+      .offer-head {
+        display: flex;
+        justify-content: center;
+        i {
+          font-size: 24px;
+        }
+        h4 {
+          font-family: @opensans;
+                font-weight: 400;
+                color: @fontcolor;
+                font-size: 24px;
+                line-height: 24px;
+                text-transform: capitalize;
+                padding-left: 10px;
+        }
+        
+      }
+      .offer-text {
+        p {
+          font-weight: 400;
+                color: @fontcolor;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: capitalize;
+                padding-top: 10px;
+                text-align: center;
+                padding: 0 30px;
+          }
+      }
+    }
+  }
+  /* =====***** offer css ends *****===== */
+
+  /* =====***** shope css starts *****===== */
+  #shope-bg {
+    margin-top: 100px;
+    .item {
+      
+      &:hover {
+        .overlay {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      position: relative;
+      .overlay {
+        width: 80%;
+        background: rgba(33, 33, 33, 80%);
+        margin: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        left: 5%;
+        bottom: 15px;
+        visibility: hidden;
+        opacity: -1;
+        transition: all linear 0.5s;
+        h2 {
+          font-family: @ralewayfont;
+                font-weight: 500;
+                color: #f1f1f1;
+                font-size: 36px;
+                line-height: 24px;
+                text-transform: capitalize;
+        }
+        h4 {
+          font-family: @ralewayfont;
+                font-weight: 500;
+                color: #f1f1f1;
+                font-size: 24px;
+                line-height: 24px;
+                text-transform: capitalize;
+        }
+        a {
+          display: inline-block;
+          font-family: @ralewayfont;
+                font-weight: 500;
+                color: #f1f1f1;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 20px 10px;
+                border: 1px solid #f1f1f1;
+                text-transform: capitalize;
+                padding: 20px 15px;
+                margin-top: 15px;
+                transition: all linear 0.5s;
+                &:hover {
+                  background: @brandcolor;
+                  border-color: @brandcolor;
+                }
+        }
+      }
+    }
+  }
+  /* =====***** shope css ends *****===== */

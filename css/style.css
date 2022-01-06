@@ -19,10 +19,47 @@ img {
 #header-bg {
   background: #444444;
 }
+#header-bg .item ul {
+  padding-left: 0 !important;
+  display: flex;
+  margin-bottom: 0;
+}
+#header-bg .item ul li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: #dddddd;
+  padding: 12px 15px;
+  text-transform: capitalize;
+  border-right: 1px solid #ddd;
+}
+#header-bg .item ul li a {
+  line-height: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #dddddd;
+  text-transform: capitalize;
+  padding: 18px 20px;
+}
+#header-bg .item ul li a:last-of-type {
+  padding-right: 0;
+}
+#header-bg .item ul li:first-of-type {
+  padding-left: 0;
+  border: 0;
+}
+#header-bg .item ul li:last-of-type {
+  padding-right: 0;
+  border: 0;
+}
 /* =====***** header css ends *****===== */
-/* =====***** banner css starts *****===== */
+/* =====***** navbar css starts *****===== */
 .navbar {
   background: #ffffff;
+  padding: 0;
+  padding-top: 35px;
 }
 .navbar .navbar-brand {
   margin-right: 180px;
@@ -35,11 +72,13 @@ img {
   margin-right: 10px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-  margin: 8px 12px;
+  margin: 8px 10px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   color: #222222;
+  text-transform: capitalize;
   position: relative;
+  transition: all linear 0.5s;
 }
 .navbar .navbar-nav .nav-item .nav-link::after {
   content: '';
@@ -54,8 +93,12 @@ img {
   width: 100%;
   transition: all linear 0.5s;
 }
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #de4644;
+}
 .navbar .navbar-nav .nav-item button {
   margin-left: 200px;
+  margin-right: 20px;
   border: 0;
   background: none;
   padding: 8px 0px;
@@ -64,7 +107,7 @@ img {
   font-size: 18px;
 }
 .navbar .navbar-nav .nav-item i {
-  padding: 8px 5px;
+  padding: 8px 0px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -75,4 +118,224 @@ img {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
+.navbar .navbar-nav .nav-item:last-of-type {
+  margin-top: 5px;
+  color: #de4644;
+}
+/* =====***** navbar css ends *****===== */
+/* =====***** banner css starts *****===== */
+#banner-bg {
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+}
+#banner-bg .item {
+  position: relative;
+  height: 600px;
+  z-index: 1;
+}
+#banner-bg .item::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#banner-bg .item-1 {
+  background: url(../images/banner-img.png) no-repeat center / cover;
+}
+#banner-bg .item-2 {
+  background: url(../images/banner-item-2.jpg) no-repeat center / cover;
+}
+#banner-bg .item-3 {
+  background: url(../images/banner-item-3.jpg) no-repeat center / cover;
+}
+#banner-bg .item-4 {
+  background: url(../images/banner-item-4.jpg) no-repeat center / cover;
+}
+#banner-bg .item-5 {
+  background: url(../images/banner-item-5.jpg) no-repeat center / cover;
+}
+#banner-bg .banner-text h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #de4644;
+  font-size: 70px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-top: 150px;
+}
+#banner-bg .banner-text h2 span {
+  font-size: 100px;
+}
+#banner-bg .banner-text h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #ddd;
+  font-size: 70px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-top: 50px;
+}
+#banner-bg .banner-text p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #ddd;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-top: 30px;
+  padding-right: 40px;
+}
+#banner-bg .banner-text a {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #ddd;
+  background: #de4644;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding: 17px 30px;
+  border: 1px solid #de4644;
+  margin-right: 30px;
+  transition: all linear 0.5s;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+#banner-bg .banner-text a:hover {
+  background: transparent;
+  border-color: #de4644;
+}
+#banner-bg .prevarrow {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 99;
+  font-size: 32px;
+  padding: 10px 20px;
+  border: 2px solid #de4644;
+  border-radius: 50%;
+  transition: all linear 0.5s;
+}
+#banner-bg .prevarrow:hover {
+  color: #de4644;
+  border-color: white;
+}
+#banner-bg .nextarrow {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 99;
+  font-size: 32px;
+  padding: 10px 20px;
+  border: 2px solid #de4644;
+  border-radius: 50%;
+  transition: all linear 0.5s;
+}
+#banner-bg .nextarrow:hover {
+  color: #de4644;
+  border-color: white;
+}
 /* =====***** banner css ends *****===== */
+/* =====***** offer css starts *****===== */
+#offer-bg {
+  background: #f1f1f1;
+}
+#offer-bg .item {
+  padding: 20px 0;
+}
+#offer-bg .item .offer-head {
+  display: flex;
+  justify-content: center;
+}
+#offer-bg .item .offer-head i {
+  font-size: 24px;
+}
+#offer-bg .item .offer-head h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+#offer-bg .item .offer-text p {
+  font-weight: 400;
+  color: #222222;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-top: 10px;
+  text-align: center;
+  padding: 0 30px;
+}
+/* =====***** offer css ends *****===== */
+/* =====***** shope css starts *****===== */
+#shope-bg {
+  margin-top: 100px;
+}
+#shope-bg .item {
+  position: relative;
+}
+#shope-bg .item:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+#shope-bg .item .overlay {
+  width: 80%;
+  background: rgba(33, 33, 33, 0.8);
+  margin: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  left: 5%;
+  bottom: 15px;
+  visibility: hidden;
+  opacity: -1;
+  transition: all linear 0.5s;
+}
+#shope-bg .item .overlay h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #f1f1f1;
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+#shope-bg .item .overlay h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #f1f1f1;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+#shope-bg .item .overlay a {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #f1f1f1;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 10px;
+  border: 1px solid #f1f1f1;
+  text-transform: capitalize;
+  padding: 20px 15px;
+  margin-top: 15px;
+  transition: all linear 0.5s;
+}
+#shope-bg .item .overlay a:hover {
+  background: #de4644;
+  border-color: #de4644;
+}
+/* =====***** shope css ends *****===== */
