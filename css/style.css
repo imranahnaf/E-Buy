@@ -21,6 +21,8 @@ img {
 }
 #header-bg .item ul {
   padding-left: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
 }
@@ -78,6 +80,7 @@ img {
   color: #222222;
   text-transform: capitalize;
   position: relative;
+  -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
 }
 .navbar .navbar-nav .nav-item .nav-link::after {
@@ -91,6 +94,7 @@ img {
 }
 .navbar .navbar-nav .nav-item .nav-link:hover::after {
   width: 100%;
+  -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
@@ -193,7 +197,7 @@ img {
 #banner-bg .banner-text a {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #ddd;
   background: #de4644;
   font-size: 16px;
@@ -202,6 +206,7 @@ img {
   padding: 17px 30px;
   border: 1px solid #de4644;
   margin-right: 30px;
+  -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
   margin-top: 50px;
   margin-bottom: 150px;
@@ -212,37 +217,35 @@ img {
 }
 #banner-bg .prevarrow {
   position: absolute;
-  top: 50%;
-  left: 60px;
-  transform: translateY(-50%);
+  bottom: 50px;
+  left: 46%;
   color: white;
   z-index: 99;
   font-size: 32px;
   padding: 10px 20px;
   border: 2px solid #de4644;
-  border-radius: 50%;
+  -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
 }
 #banner-bg .prevarrow:hover {
-  color: #de4644;
-  border-color: white;
+  color: white;
+  background: #de4644;
 }
 #banner-bg .nextarrow {
   position: absolute;
-  top: 50%;
-  right: 60px;
-  transform: translateY(-50%);
+  bottom: 50px;
+  right: 46%;
   color: white;
   z-index: 99;
   font-size: 32px;
   padding: 10px 20px;
   border: 2px solid #de4644;
-  border-radius: 50%;
+  -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
 }
 #banner-bg .nextarrow:hover {
-  color: #de4644;
-  border-color: white;
+  color: white;
+  background: #de4644;
 }
 /* =====***** banner css ends *****===== */
 /* =====***** offer css starts *****===== */
@@ -251,10 +254,29 @@ img {
 }
 #offer-bg .item {
   padding: 20px 0;
+  border-right: 1px solid #aca9a9;
+}
+#offer-bg .item:last-of-type {
+  border-right: 0;
 }
 #offer-bg .item .offer-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+#offer-bg .item .offer-head:hover {
+  color: #de4644;
+}
+#offer-bg .item .offer-head:hover h4 {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  color: #de4644;
 }
 #offer-bg .item .offer-head i {
   font-size: 24px;
@@ -292,16 +314,17 @@ img {
 }
 #shope-bg .item .overlay {
   width: 80%;
-  background: rgba(33, 33, 33, 0.8);
+  background: rgba(33, 33, 33, 0.9);
   margin: 25px;
   margin-bottom: 10px;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   position: absolute;
   left: 5%;
   bottom: 15px;
   visibility: hidden;
   opacity: -1;
+  -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
 }
 #shope-bg .item .overlay h2 {
@@ -332,6 +355,7 @@ img {
   text-transform: capitalize;
   padding: 20px 15px;
   margin-top: 15px;
+  -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
 }
 #shope-bg .item .overlay a:hover {
@@ -339,3 +363,116 @@ img {
   border-color: #de4644;
 }
 /* =====***** shope css ends *****===== */
+/* =====***** products css starts *****===== */
+#products-bg {
+  margin-top: 100px;
+}
+#products-bg .products-head {
+  text-align: center;
+}
+#products-bg .products-head h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #222222;
+  font-size: 40px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin-bottom: 90px;
+  position: relative;
+}
+#products-bg .products-head h4::before {
+  content: '';
+  width: 175px;
+  height: 1px;
+  background: #de4644;
+  position: absolute;
+  left: 35px;
+  bottom: -20px;
+}
+#products-bg .products-head h4::after {
+  content: '';
+  width: 85px;
+  height: 1px;
+  background: #de4644;
+  position: absolute;
+  left: 35px;
+  bottom: -25px;
+}
+#products-bg .item .img-section {
+  overflow: hidden;
+  position: relative;
+}
+#products-bg .item .img-section .overlay {
+  width: 40%;
+  height: 100%;
+  background: rgba(34, 34, 34, 0.7);
+  position: absolute;
+  top: 0;
+  right: -100%;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+#products-bg .item .img-section .overlay ul {
+  text-align: center;
+  padding-top: 90px;
+}
+#products-bg .item .img-section .overlay ul li {
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 32px;
+  background: transparent;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+#products-bg .item .img-section .overlay ul li:hover {
+  background: #de4644;
+  border-color: #de4644;
+}
+#products-bg .item .img-section .overlay ul li a {
+  color: white;
+}
+#products-bg .item .img-section .overlay ul li a i {
+  font-size: 24px;
+}
+#products-bg .item:hover .overlay {
+  right: 0;
+}
+#products-bg .item .products-rate ul {
+  padding-left: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+#products-bg .item .products-rate ul:first-of-type {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#products-bg .item .products-rate ul:first-of-type li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #222222;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+#products-bg .item .products-rate ul:last-of-type {
+  padding: 0;
+  margin: 0;
+}
+#products-bg .item .products-rate ul:last-of-type li {
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  margin-right: 5px;
+}
+#products-bg .item .products-rate ul:last-of-type li a {
+  color: #de4644;
+}
+/* =====***** products css ends *****===== */
