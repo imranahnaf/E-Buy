@@ -9,7 +9,6 @@ $(function() {
 
         // the magic
         responsive: [{
-
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
@@ -31,4 +30,8 @@ $(function() {
 
         }]
     });
+
+    // CommonJS
+
+    var mixitup = require('mixitup');
 });
