@@ -398,8 +398,28 @@ img {
   left: 35px;
   bottom: -25px;
 }
+#products-bg .filter-menu .nav {
+  margin-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#products-bg .filter-menu .nav .nav-item {
+  margin-right: 10px;
+}
+#products-bg .filter-menu .nav .nav-item .nav-link {
+  border: none;
+  text-transform: capitalize;
+  color: #de4644;
+  padding: 10px 22px;
+}
+#products-bg .filter-menu .nav .nav-item .nav-link.active {
+  border: none;
+  background: #de4644;
+  color: white;
+}
 #products-bg .item {
-  margin-bottom: 50px;
+  margin-top: 30px;
 }
 #products-bg .item .img-section {
   overflow: hidden;
