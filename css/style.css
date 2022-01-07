@@ -407,16 +407,19 @@ img {
 #products-bg .filter-menu .nav .nav-item {
   margin-right: 10px;
 }
+#products-bg .filter-menu .nav .nav-item:last-of-type .nav-link {
+  border-right: 0;
+}
 #products-bg .filter-menu .nav .nav-item .nav-link {
   border: none;
   text-transform: capitalize;
-  color: #de4644;
-  padding: 10px 22px;
+  color: #353535;
+  background: none;
+  padding: 0 22px;
+  border-right: 1px solid #8d8c8c;
 }
 #products-bg .filter-menu .nav .nav-item .nav-link.active {
-  border: none;
-  background: #de4644;
-  color: white;
+  color: #de4644;
 }
 #products-bg .item {
   margin-top: 30px;
@@ -487,7 +490,6 @@ img {
 }
 #products-bg .item .products-rate ul:last-of-type {
   padding: 0;
-  margin: 0;
 }
 #products-bg .item .products-rate ul:last-of-type li {
   -webkit-box-pack: normal;
@@ -499,3 +501,46 @@ img {
   color: #de4644;
 }
 /* =====***** products css ends *****===== */
+/* =====***** countdown css starts *****===== */
+#countdown-bg {
+  background: #f1f1f1;
+  margin-top: 100px;
+  padding: 50px 0;
+}
+#countdown-bg .item-2 .text h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #353535;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding: 0;
+}
+#countdown-bg .item-2 .text h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #de4644;
+  font-size: 40px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding: 0;
+}
+#countdown-bg .item-2 .text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #353535;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+#countdown-bg .item-2 .counting p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #353535;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+/* =====***** countdown css ends *****===== */
