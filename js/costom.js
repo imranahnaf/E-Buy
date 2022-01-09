@@ -85,6 +85,7 @@ $(function() {
         // normal options...
         autoplay: true,
         infinite: true,
+        dots: false,
         autoplaySpeed: 1000,
         prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
@@ -119,6 +120,7 @@ $(function() {
         // normal options...
         autoplay: true,
         infinite: true,
+        dots: false,
         autoplaySpeed: 1000,
         prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
