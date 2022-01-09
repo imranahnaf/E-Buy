@@ -4,7 +4,10 @@ $(function() {
     $(".banner-slider").slick({
 
         // normal options...
+        autoplay: true,
         infinite: true,
+        dots: false,
+        autoplaySpeed: 1000,
         prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
 
@@ -80,7 +83,43 @@ $(function() {
     // =====***** update products slider js starts *****=====//
     $(".up-product-slider").slick({
         // normal options...
+        autoplay: true,
         infinite: true,
+        autoplaySpeed: 1000,
+        prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
+        nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
+
+        // the magic
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                infinite: true
+            }
+
+        }, {
+
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                dots: true
+            }
+
+        }, {
+
+            breakpoint: 300,
+            settings: "unslick" // destroys slick
+
+        }]
+    });
+    // =====***** update products slider js ends *****=====//
+
+    // =====***** update products slider js starts *****=====//
+    $(".testimonials-slider").slick({
+        // normal options...
+        autoplay: true,
+        infinite: true,
+        autoplaySpeed: 1000,
         prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
 

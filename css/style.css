@@ -273,11 +273,11 @@ img {
 #banner-bg .prevarrow {
     position: absolute;
     bottom: 50px;
-    left: 46%;
+    left: 47%;
     color: white;
     z-index: 99;
     font-size: 32px;
-    padding: 10px 20px;
+    padding: 4px 13px;
     border: 2px solid #de4644;
     -webkit-transition: all linear 0.5s;
     transition: all linear 0.5s;
@@ -291,11 +291,11 @@ img {
 #banner-bg .nextarrow {
     position: absolute;
     bottom: 50px;
-    right: 46%;
+    right: 47%;
     color: white;
     z-index: 99;
     font-size: 32px;
-    padding: 10px 20px;
+    padding: 4px 13px;
     border: 2px solid #de4644;
     -webkit-transition: all linear 0.5s;
     transition: all linear 0.5s;
@@ -721,7 +721,7 @@ img {
     font-size: 40px;
     line-height: 24px;
     text-transform: capitalize;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     position: relative;
 }
 
@@ -844,7 +844,7 @@ img {
     color: #de4644;
     z-index: 99;
     font-size: 32px;
-    padding: 10px 20px;
+    padding: 4px 13px;
     border: 2px solid #de4644;
     -webkit-transition: all linear 0.5s;
     transition: all linear 0.5s;
@@ -864,7 +864,7 @@ img {
     color: #de4644;
     z-index: 99;
     font-size: 32px;
-    padding: 10px 20px;
+    padding: 4px 13px;
     border: 2px solid #de4644;
     -webkit-transition: all linear 0.5s;
     transition: all linear 0.5s;
@@ -877,3 +877,368 @@ img {
 
 
 /* =====***** update product css ends *****===== */
+
+
+/* =====***** testimonials css starts *****===== */
+
+
+/* ----- heading starts ----- */
+
+#testimonials-head {
+    margin-top: 100px;
+}
+
+#testimonials-head .testimonials-head h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #222222;
+    font-size: 40px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+#testimonials-head .testimonials-head h4::before {
+    content: '';
+    width: 175px;
+    height: 1px;
+    background: #de4644;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+}
+
+#testimonials-head .testimonials-head h4::after {
+    content: '';
+    width: 85px;
+    height: 1px;
+    background: #de4644;
+    position: absolute;
+    left: 0px;
+    bottom: -25px;
+}
+
+
+/* ----- heading ends ----- */
+
+#testimonials-bg {
+    background: url(../images/testimonial-bg.png) no-repeat center / cover;
+    position: relative;
+    padding: 50px 0 130px 0;
+    z-index: 1;
+}
+
+#testimonials-bg::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#testimonials-bg .item .img img {
+    border-radius: 50%;
+}
+
+#testimonials-bg .item .text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #ddd;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#testimonials-bg .item .text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #ddd;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#testimonials-bg .item .text p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #ddd;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#testimonials-bg .item .text h6 {
+    font-family: 'The Nautigal', cursive;
+    font-weight: 500;
+    color: #ddd;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding-top: 30px;
+    text-align: right;
+}
+
+#testimonials-bg .prevarrow {
+    position: absolute;
+    left: 46%;
+    bottom: -70px;
+    color: white;
+    z-index: 99;
+    font-size: 32px;
+    padding: 4px 13px;
+    border: 2px solid #de4644;
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+#testimonials-bg .prevarrow:hover {
+    color: white;
+    background: #de4644;
+}
+
+#testimonials-bg .nextarrow {
+    position: absolute;
+    right: 46%;
+    bottom: -70px;
+    color: white;
+    z-index: 99;
+    font-size: 32px;
+    padding: 4px 13px;
+    border: 2px solid #de4644;
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+#testimonials-bg .nextarrow:hover {
+    color: white;
+    background: #de4644;
+}
+
+
+/* =====***** testimonials css ends *****===== */
+
+
+/* =====***** our blog css starts *****===== */
+
+#blog-bg {
+    margin-top: 100px;
+}
+
+#blog-bg .blog-head h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #222222;
+    font-size: 40px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+#blog-bg .blog-head h4::before {
+    content: '';
+    width: 75px;
+    height: 1px;
+    background: #de4644;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+}
+
+#blog-bg .blog-head h4::after {
+    content: '';
+    width: 35px;
+    height: 1px;
+    background: #de4644;
+    position: absolute;
+    left: 0px;
+    bottom: -25px;
+}
+
+#blog-bg .item {
+    overflow: hidden;
+}
+
+#blog-bg .item .img {
+    position: relative;
+}
+
+#blog-bg .item .img:hover .overlay {
+    top: 0;
+}
+
+#blog-bg .item .img .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+#blog-bg .item .img .overlay ul {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#blog-bg .item .img .overlay ul:nth-of-type(2) li {
+    text-align: center;
+    margin-top: 120px;
+}
+
+#blog-bg .item .img .overlay ul:nth-of-type(2) li a {
+    color: white;
+    padding: 14px 13px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+}
+
+#blog-bg .item .img .overlay ul:nth-of-type(2) li a i {
+    font-size: 24px;
+}
+
+#blog-bg .item .img .overlay ul:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+#blog-bg .item .img .overlay ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #ddd;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+#blog-bg .item .text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #353535;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#blog-bg .item .text p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #353535;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#blog-bg .item .text a {
+    display: inline-block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #353535;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding-top: 20px;
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+#blog-bg .item .text a:hover {
+    color: #de4644;
+}
+
+
+/* =====***** our blog css ends *****===== */
+
+
+/* =====***** footer css starts *****===== */
+
+#footer-bg {
+    margin-top: 100px;
+    background: #353535;
+    padding: 60px 0;
+}
+
+#footer-bg .item .head h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#footer-bg .item .text ul {
+    padding: 0;
+    margin: 0;
+}
+
+#footer-bg .item .text ul li p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#footer-bg .item .text ul li a {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+#footer-bg .item-2 .text ul {
+    padding-top: 40px;
+}
+
+#footer-bg .item-2 .text ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#footer-bg .item-2 .text ul li i {
+    color: white;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+#footer-bg .item-2 .text ul li p {
+    padding-top: 0;
+}
+
+#footer-bg .item-3 ul li p {
+    padding-top: 0px;
+}
+
+
+/* =====***** footer css ends *****===== */
