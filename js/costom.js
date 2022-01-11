@@ -7,30 +7,46 @@ $(function() {
         autoplay: true,
         infinite: true,
         dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         autoplaySpeed: 1000,
         prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
 
         // the magic
         responsive: [{
-            breakpoint: 1024,
+            breakpoint: 767,
             settings: {
-                slidesToShow: 3,
-                infinite: true
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
+            }
+
+        }, {
+            breakpoint: 767,
+            settings: {
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
             }
 
         }, {
 
-            breakpoint: 600,
+            breakpoint: 575,
             settings: {
-                slidesToShow: 2,
-                dots: true
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
             }
-
-        }, {
-
-            breakpoint: 300,
-            settings: "unslick" // destroys slick
 
         }]
     });
@@ -86,6 +102,8 @@ $(function() {
         autoplay: true,
         infinite: true,
         dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         autoplaySpeed: 1000,
         prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
@@ -121,6 +139,8 @@ $(function() {
         autoplay: true,
         infinite: true,
         dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         autoplaySpeed: 1000,
         prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
