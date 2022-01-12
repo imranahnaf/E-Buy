@@ -1,8 +1,16 @@
-$(function() {
+$(document).ready(function() {
+    'use strict';
+
+    $(window).load(function() {
+        $('#preloader-bg').fadeIn().css('display', 'flex');
+    });
+
+    $(window).ready(function() {
+        $('#preloader-bg').fadeOut(6000).css('display', 'flex');
+    });
 
     // =====***** banner slider js starts *****=====//
     $(".banner-slider").slick({
-
         // normal options...
         autoplay: true,
         infinite: true,

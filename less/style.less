@@ -25,6 +25,38 @@
   @signaturefont: 'The Nautigal', cursive;
   /* variable ends */
 
+  /* preloader starts */ 
+  #preloader-bg {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    .preloader {
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border-top: 15px solid white;
+      border-right: 15px solid red;
+      border-bottom: 15px solid green;
+      border-left: 15px solid blue;
+      animation: preloder 5s linear;
+    }
+
+  @keyframes preloder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+    
+  
+}
+  /* preloader ends */ 
+
   /* =====***** header css starts *****===== */
   #header-bg {
       background: #444444;
@@ -180,7 +212,6 @@
               font-weight: 700;
               color: @brandcolor;
               font-size: 70px;
-              line-height: 24px;
               text-transform: capitalize;
               padding-top: 150px;
             }
