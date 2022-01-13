@@ -1,13 +1,15 @@
-$(document).ready(function() {
+$(function() {
     'use strict';
 
-    $(window).load(function() {
-        $('#preloader-bg').fadeIn().css('display', 'flex');
+    // =====***** prelader js starts *****=====//
+    $(document).ready(function() {
+        $('#preloader-bg').fadeIn(500).delay(1000).css('display', 'flex');
     });
+    $(document).ready(function() {
+        $('#preloader-bg').fadeOut(1000).css('display', 'flex');
+    });
+    // =====***** prelader js ends *****=====//
 
-    $(window).ready(function() {
-        $('#preloader-bg').fadeOut(6000).css('display', 'flex');
-    });
 
     // =====***** banner slider js starts *****=====//
     $(".banner-slider").slick({
