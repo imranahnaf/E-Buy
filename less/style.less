@@ -35,7 +35,7 @@
     justify-content: center;
     position: fixed;
     z-index: 99999999999999;
-  
+    display: none;
 }
   /* preloader ends */ 
 
@@ -87,12 +87,8 @@
   .navbar {
       background: #ffffff;
       padding: 0;
-      padding-top: 35px;
-      .navbar-brand {
-          margin-right: 180px;
-      }
+      padding: 35px 0;
       .navbar-nav {
-          margin-left: 220px;
           .nav-item {
               line-height: 24px;
               margin-right: 10px;
@@ -157,10 +153,9 @@
   #banner-bg {
       position: relative;
       z-index: 1;
-      margin-top: 30px;
       .item {
           position: relative;
-          height: 600px;
+          height: 630px;
           z-index: 1;
           &::after {
             content: '';
@@ -888,7 +883,7 @@
 
   /* =====***** our blog css starts *****===== */
   #blog-bg {
-    margin-top: 100px;
+    margin: 100px 0;
       .blog-head {
         h4 {
           font-family: @ralewayfont;
@@ -1018,7 +1013,6 @@
 
       /* =====***** footer css starts *****===== */
     #footer-bg {
-      margin-top: 100px;
       background: #353535;
       padding: 60px 0;
       .item {
@@ -1198,5 +1192,313 @@
     }
       /* =====***** copyright footer css ends *****===== */
 
-      /* =====***** ----- contact page css starts ------ *****===== */
-       /* =====***** ----- contact page css ends ------ *****===== */
+
+
+
+
+
+
+      /* =====***** ----- about page css starts ------ *****===== */
+      /* =====***** breadcrumbs footer css starts *****===== */
+      #about-breadcrumbs {
+        background: url(../images/breadcrumbs-bg.png) no-repeat center / cover;
+        z-index: 1;
+        position: relative;
+        padding: 75px 0;
+        &::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 70%);
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+        .breadcrumbs-text {
+          h4 {
+            font-family: @ralewayfont;
+            font-weight: 500;
+            color: white;
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: capitalize;
+            margin: 0;
+          }
+          a{
+            display: inline-block;
+            font-family: @ralewayfont;
+            font-weight: 500;
+            color: white;
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: capitalize;
+            transition: all linear 0.5s;
+            &:hover {
+              color: @brandcolor;
+            }
+          }
+          i {
+            color: white;
+            font-size: 18px;
+          }
+        }
+      }
+      /* =====***** breadcrumbs footer css ends *****===== */
+
+      /* =====***** about products  css starts *****===== */
+      #about-prosucts {
+        margin-top: 100px;
+        .text-section {
+          position: relative;
+          .text {
+            padding: 30px 26px;
+            margin-top: 45px;
+            background: rgba(0, 0, 0, 90%);
+            position: absolute;
+            top: 0;
+            left:  -80px;
+            p {
+              width: 520px;
+              font-family: @opensans;
+              font-weight: 400;
+              color: white;
+              font-size: 14px;
+              line-height: 24px;
+              text-transform: capitalize;
+              margin: 0;
+              padding-bottom: 35px;
+              &:last-of-type {
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+      /* =====***** about products  css ends *****===== */
+       
+
+      /* =====***** about countdown  css ends *****===== */
+       #about-countdown-bg {
+         background: url(../images/countdown-bg.png) no-repeat center/cover;
+         position: relative;
+         z-index: 1;
+         padding: 45px 0;
+         margin-top: 100px;
+         &::after {
+           content: '';
+           width: 100%;
+           height: 100%;
+           background: rgba(0, 0, 0, 85%);
+           z-index: -1;
+           position: absolute;
+           top: 0;
+           left: 0;
+         }
+        .item {
+          ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            li {
+              text-align: center;
+              h5 {
+                font-family: @ralewayfont;
+                font-weight: 500;
+                color: white;
+                font-size: 40px;
+                line-height: 24px;
+                text-transform: capitalize;
+              }
+              p {
+                font-family: @opensans;
+                font-weight: 400;
+                color: white;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: capitalize;
+                padding-top: 5px;
+              }
+            }
+          }
+        }
+       }
+       /* =====***** about countdown  css ends *****===== */
+
+       /* =====***** about designer team css starts *****===== */
+       #designer-team {
+         margin: 100px 0;
+         .designer-head {
+          text-align: center;
+          h4 {
+            font-family: @ralewayfont;
+                      font-weight: 500;
+                      color: #222222;
+                      font-size: 40px;
+                      line-height: 24px;
+                      text-transform: capitalize;
+                      margin-bottom: 90px;
+                      position: relative;
+                      &::before {
+                        content: '';
+                        width: 175px;
+                        height: 1px;
+                        background: @brandcolor;
+                        position: absolute;
+                        left: 35px;
+                        bottom: -20px;
+                      }
+                      &::after {
+                        content: '';
+                        width: 85px;
+                        height: 1px;
+                        background: @brandcolor;
+                        position: absolute;
+                        left: 35px;
+                        bottom: -25px;
+                      }
+                      
+          }
+        }
+         .item {
+          .img-section {
+            overflow: hidden;
+            position: relative;
+            .overlay {
+              width: 40%;
+              height: 100%;
+              background: rgba(34, 34, 34, 70%);
+              position: absolute;
+              top: 0;
+              right: -100%;
+              transition: all linear 0.5s;
+              ul {
+                text-align: center;
+                padding-top: 40px;
+                li {
+                  width: 45px;
+                  height: 45px;
+                  border: 1px solid white;
+                  border-radius: 50%;
+                  text-align: center;
+                  line-height: 45px;
+                  margin-bottom: 32px;
+                  background: transparent;
+                  transition: all linear 0.5s;
+                  &:hover {
+                    background: @brandcolor;
+                    border-color: @brandcolor;
+                  }
+                  a {
+                    color: white;
+                    i {
+                      font-size: 24px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+          .overlay {
+                     right: 0;
+                   }
+         }
+         .desination {
+           text-align: center;
+           border: 1px solid #353535;
+           h4 {
+             margin: 0;
+             font-family: @ralewayfont;
+                font-weight: 500;
+                color: #353535;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: capitalize;
+                padding-top: 20px;
+           }
+           p {
+            padding: 0;
+            font-family: @ralewayfont;
+               font-weight: 500;
+               color: #353535;
+               font-size: 16px;
+               line-height: 24px;
+               text-transform: capitalize;
+               padding-top: 5px;
+          }
+         }
+         }
+       }
+       /* =====***** about designer team css ends *****===== */
+
+       /* =====***** about sponsor team css starts *****===== */
+       #sponsor-bg {
+         position: relative;
+         margin-bottom: 60px;
+        .prevarrow {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -50px;
+          color:#353535;
+          z-index: 99;
+          font-size: 32px;
+          padding: 7px 13px;
+          border: 2px solid #de4644;
+          transition: all linear 0.5s;
+          &:hover {
+            color: white;
+            background: @brandcolor;
+          }
+        }
+        .nextarrow {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -50px;
+          color:#353535;
+          z-index: 99;
+          font-size: 32px;
+          padding: 7px 13px;
+          border: 2px solid #de4644;
+          transition: all linear 0.5s;
+          &:hover {
+            color: white;
+            background: @brandcolor;
+          }
+        }
+        .slick-center {
+          box-shadow: 0 50px 100px -20px rgb(50, 50, 93, 0.25), 0 30px 60px -30px rgb(0, 0, 0, 0.3), 0 -2px 6px 0 rgb(10, 37, 64, 0.35) inset;
+          transition: all 0.4s linear;
+          img {
+            transform: scale(1);
+            transition: all 0.4s linear;
+          }
+        }
+        .sponsor-slider {
+          .sponsor-item {
+            width: 10%;
+            img {
+              width: 100%;
+              transform: scale(0.90);
+            }
+          }
+        }
+       }
+       /* =====***** about sponsor team css ends *****===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+       /* =====***** ----- about page css ends ------ *****===== */
