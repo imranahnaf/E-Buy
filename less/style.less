@@ -883,7 +883,7 @@
 
   /* =====***** our blog css starts *****===== */
   #blog-bg {
-    margin: 100px 0;
+    margin-top: 100px;
       .blog-head {
         h4 {
           font-family: @ralewayfont;
@@ -1015,6 +1015,7 @@
     #footer-bg {
       background: #353535;
       padding: 60px 0;
+      margin-top: 100px;
       .item {
         .head {
           h4 {
@@ -1192,15 +1193,8 @@
     }
       /* =====***** copyright footer css ends *****===== */
 
-
-
-
-
-
-
-      /* =====***** ----- about page css starts ------ *****===== */
       /* =====***** breadcrumbs footer css starts *****===== */
-      #about-breadcrumbs {
+      #breadcrumbs {
         background: url(../images/breadcrumbs-bg.png) no-repeat center / cover;
         z-index: 1;
         position: relative;
@@ -1216,13 +1210,14 @@
           z-index: -1;
         }
         .breadcrumbs-text {
+          text-align: center;
           h4 {
             font-family: @ralewayfont;
             font-weight: 500;
             color: white;
             font-size: 24px;
             line-height: 24px;
-            text-transform: capitalize;
+            text-transform: uppercase;
             margin: 0;
           }
           a{
@@ -1233,6 +1228,7 @@
             font-size: 18px;
             line-height: 24px;
             text-transform: capitalize;
+            margin-top: 10px;
             transition: all linear 0.5s;
             &:hover {
               color: @brandcolor;
@@ -1246,6 +1242,12 @@
       }
       /* =====***** breadcrumbs footer css ends *****===== */
 
+
+
+
+
+
+      /* =====***** ----- about page css starts ------ *****===== */
       /* =====***** about products  css starts *****===== */
       #about-prosucts {
         margin-top: 100px;
@@ -1436,6 +1438,7 @@
        /* =====***** about sponsor team css starts *****===== */
        #sponsor-bg {
          position: relative;
+         margin-top: 100px;
          margin-bottom: 60px;
         .prevarrow {
           position: absolute;
@@ -1444,8 +1447,8 @@
           left: -50px;
           color:#353535;
           z-index: 99;
-          font-size: 32px;
-          padding: 7px 13px;
+          font-size: 24px;
+          padding: 6px 10px;
           border: 2px solid #de4644;
           transition: all linear 0.5s;
           &:hover {
@@ -1460,8 +1463,8 @@
           right: -50px;
           color:#353535;
           z-index: 99;
-          font-size: 32px;
-          padding: 7px 13px;
+          font-size: 24px;
+          padding: 6px 10px;
           border: 2px solid #de4644;
           transition: all linear 0.5s;
           &:hover {
@@ -1489,16 +1492,295 @@
        }
        /* =====***** about sponsor team css ends *****===== */
 
-
-
-
-
-
-
-
-
-
-
-
-
        /* =====***** ----- about page css ends ------ *****===== */
+
+
+
+
+       /* =====***** ----- products details page css starts ------ *****===== */
+        /* =====***** products details css ends *****===== */
+        #pd-details-bg {
+            margin-top: 100px;
+            .thumbnail-slider {
+            .slider-item {
+              img {
+                padding: 10px;
+              }
+            }
+          }
+            .product-details {
+            .product-head {
+              h4 {
+                font-family: @ralewayfont;
+                font-weight: 500;
+                color: #222222;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: capitalize;
+              }
+              .rating {
+                i {
+                  font-size: 18px;
+                  color: @brandcolor;
+                  padding-right: 5px;
+                }
+              }
+              p {
+                font-family: @opensans;
+                font-weight: 400;
+                font-size: 14px;
+                color: #353535;
+                line-height: 24px;
+              }
+              .pt-30 {
+                padding-top: 40px;
+                padding-right: 10px;
+              }
+            }
+              .color-size {
+                padding-top: 60px;
+                .color {
+                  span {
+                    width: 100px;
+                    font-size: 16px;
+                    font-family: @ralewayfont;
+                    font-weight: 500;
+                    color: #222;
+                    text-transform: capitalize;
+                  }
+                }
+                .size {
+                  span {
+                    width: 100px;
+                    font-size: 16px;
+                    font-family: @ralewayfont;
+                    font-weight: 500;
+                    color: #222;
+                    text-transform: capitalize;
+                  }
+                }
+              
+              .quntity {
+                  padding-top: 10px;
+                span {
+                  width: 100px;
+                  font-size: 16px;
+                  font-family: @ralewayfont;
+                  font-weight: 500;
+                  color: #222;
+                  text-transform: capitalize;
+                }
+                    .form-cheek {
+                      .input-group {
+                        width: 60px;
+                        height: 40px;
+                        border: none;
+                        display: block;
+                        position: relative;
+
+                        input {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border: 1px solid #222;
+                        padding: 0 !important;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        }
+
+                        .form-control {
+                        padding: 0 !important;
+                        margin-left: 0 !important;
+                        border-radius: 0;
+                        }
+
+                        .btn-plus {
+                          min-width: 20px !important;
+                          height: 20px;
+                          text-align: center;
+                          line-height: 0px;
+                          background: transparent;
+                          border-radius: 0;
+                          padding: 0 !important;
+                          position: absolute;
+                          top: 0;
+                          right: 0;
+                          transition: all linear 0.5s;
+                        strong {
+                          color: #222;
+                          transition: all linear 0.5s;
+                        }
+                        &:hover {
+                          background: @brandcolor;
+                          strong {
+                            color: white;
+                          }
+                        }
+                          }
+
+                        .btn-minus {
+                        min-width: 20px !important;
+                        height: 20px;
+                        text-align: center;
+                        line-height: 0px;
+                        background: transparent;
+                        border-radius: 0;
+                        padding: 0 !important;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        transition: all linear 0.5s;
+                        strong {
+                          color: #222;
+                          transition: all linear 0.5s;
+                        }
+                        &:hover {
+                          background: @brandcolor;
+                          strong {
+                            color: white;
+                          }
+                        }
+                       }
+                      }
+                    }
+                }
+                .icon {
+                  padding-top: 65px;
+                  ul {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    li {
+                      width: 50px;
+                      height: 50px;
+                      line-height: 50px;
+                      border: 1px solid #353535;
+                      text-align: center;
+                      margin-right: 15px;
+                      transition: all linear 0.5s;
+                      &:hover {
+                        background: @brandcolor;
+                        a {
+                          color: white;
+                        }
+                      }
+                      a {
+                        color: #353535;
+                        transition: all linear 0.5s;
+                        i {
+                          font-size: 26px;
+                        } 
+                      }
+                    }
+                  }
+                }
+                .catagory {
+                  padding-top: 65px;
+                  span {
+                    width: 100px;
+                    font-family: @ralewayfont;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #353535;
+                    text-transform: capitalize;
+                    line-height: 24px;
+                  }
+                  p {
+                    padding: 0;
+                    margin: 0;
+                    font-family: @ralewayfont;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #353535;
+                    text-transform: capitalize;
+                    line-height: 24px;
+                  }
+                }
+
+                .social-icon {
+                  padding-top: 65px;
+                  p {
+                    padding: 0;
+                    margin: 0;
+                    font-family: @ralewayfont;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #222;
+                    text-transform: capitalize;
+                    line-height: 24px;
+                  }
+                  ul {
+                    padding: 0;
+                    margin-top: 20px;
+                    display: flex;
+                    li {
+                      width: 35px;
+                      height: 35px;
+                      line-height: 35px;
+                      border-radius: 50%;
+                      border: 1px solid #353535;
+                      text-align: center;
+                      margin-right: 15px;
+                      transition: all linear 0.5s;
+                      &:hover {
+                        background: @brandcolor;
+                        border-color: @brandcolor;
+                        a {
+                          color: white;
+                        }
+                      }
+                      a {
+                        color: #353535;
+                        transition: all linear 0.5s;
+                        i {
+                          font-size: 18px;
+                        } 
+                      }
+                    }
+                  }
+                }
+              }
+            }
+              .product-description {
+                padding-top: 75px;
+                a {
+                  padding: 0px 20px;
+                  display: inline-block;
+                  font-family: @ralewayfont;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 24px;
+                  color: #222;
+                  text-transform: capitalize;
+                  transition: all linear 0.5s;
+                  &:first-of-type {
+                    border-right: 1px solid #353535;
+                    padding-left: 0;
+                  }
+                  &:hover {
+                    color: @brandcolor;
+                  }
+                }
+                p {
+                  font-family: @opensans;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 24px;
+                  color: #222;
+                  text-transform: capitalize;
+                  margin-bottom: 0;
+                  padding-top: 45px;
+                  padding-right: 40px;
+                  &:last-of-type {
+                    padding-top: 35px;
+                  }
+                }
+              }
+            }
+        
+       
+
+       /* =====***** products details css ends *****===== */
+
+       /* =====***** ----- products details page css ends ------ *****===== */

@@ -235,8 +235,134 @@ $(document).ready(function() {
     });
     // ======== *****about sponsor slider & responsive js ends***** ======== //
 
+    // =====***** preview-slider & responsive js starts *****=====//
+    $(".preview-slider").slick({
+        // normal options...
+        autoplay: false,
+        infinite: true,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 3,
+        autoplaySpeed: 1000,
+        draggable: false,
+        arrows: false,
+        focusOnSelect: true,
+        asNavFor: '.thumbnail-slider',
+        // prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
+        // nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
+
+        // the magic
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
+            }
+
+        }, {
+            breakpoint: 767,
+            settings: {
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
+            }
+
+        }, {
+
+            breakpoint: 575,
+            settings: {
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
+            }
+
+        }]
+    });
+    // =====***** banner slider & responsive js ends *****=====//
+
+    // =====***** banner slider & responsive js starts *****=====//
+    $(".thumbnail-slider").slick({
+        // normal options...
+        autoplay: false,
+        infinite: true,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplaySpeed: 1000,
+        draggable: false,
+        arrows: false,
+        focusOnSelect: true,
+        asNavFor: '.preview-slider',
+        // prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
+        // nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
+
+        // the magic
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
+            }
+
+        }, {
+            breakpoint: 767,
+            settings: {
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
+            }
+
+        }, {
+
+            breakpoint: 575,
+            settings: {
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 1000,
+            }
+
+        }]
+    });
+    // =====***** banner slider & responsive js ends *****=====//
 
 
+    // =====*****  image zoom affect js starts *****=====//
+    $(document).ready(function() {
+        //Simple usage
+        $('img.light-zoom').lightzoom();
+
+        //customize
+        $('img.light-zoom').lightzoom({
+            zoomPower: 3, //Default
+            glassSize: 200, //Default
+        });
+
+    });
+    // =====*****  image zoom affect js ends *****=====//
+
+    // =====*****  forms js starts *****=====//
+    $("input[type='number']").inputSpinner();
+    // =====*****  forms js ends *****=====//
 
 
 
