@@ -1139,7 +1139,7 @@ img {
   text-transform: uppercase;
 }
 /* =====***** copyright footer css ends *****===== */
-/* =====***** breadcrumbs footer css starts *****===== */
+/* =====***** breadcrumbs css starts *****===== */
 #breadcrumbs {
   background: url(../images/breadcrumbs-bg.png) no-repeat center / cover;
   z-index: 1;
@@ -1161,7 +1161,7 @@ img {
 }
 #breadcrumbs .breadcrumbs-text h4 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   font-size: 24px;
   line-height: 24px;
@@ -1187,7 +1187,7 @@ img {
   color: white;
   font-size: 18px;
 }
-/* =====***** breadcrumbs footer css ends *****===== */
+/* =====***** breadcrumbs css ends *****===== */
 /* =====***** ----- about page css starts ------ *****===== */
 /* =====***** about products  css starts *****===== */
 #about-prosucts {
@@ -1709,3 +1709,288 @@ img {
 }
 /* =====***** products details css ends *****===== */
 /* =====***** ----- products details page css ends ------ *****===== */
+/* =====***** ----- contact page css starts ------ *****===== */
+/* =====***** contact form css ends *****===== */
+#contact-form {
+  padding-top: 100px;
+}
+#contact-form form {
+  position: relative;
+}
+#contact-form form p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #222;
+  text-transform: capitalize;
+}
+#contact-form form input {
+  width: 49%;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+#contact-form form input:first-of-type {
+  margin-right: 1%;
+}
+#contact-form form input:nth-of-type(3) {
+  margin-right: 1%;
+}
+#contact-form form textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding-left: 10px;
+}
+#contact-form form button {
+  width: 80px;
+  height: 80px;
+  background: #de4644;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+}
+#contact-form form button i {
+  color: white;
+  position: absolute;
+  font-size: 24px;
+}
+#contact-form .contact-address .head h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #222;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0;
+}
+#contact-form .contact-address .text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0;
+  margin-top: 25px;
+}
+#contact-form .contact-address .text ul {
+  padding: 0;
+  padding-top: 10px;
+}
+#contact-form .contact-address .text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+#contact-form .contact-address .text ul li i {
+  font-size: 18px;
+  color: #de4644;
+}
+#contact-form .contact-address .text ul li p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0;
+}
+#contact-form .contact-address .text ul li a {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+/* =====***** contact form css ends *****===== */
+/* =====***** contact map css ends *****===== */
+#contact-map {
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  display: inline-block;
+}
+/* =====***** contact map css ends *****===== */
+/* =====***** ----- contact page css ends ------ *****===== */
+/* =====***** ----- chekout page css starts ------ *****===== */
+/* =====***** chekout forms css starts *****===== */
+#chekout-form {
+  margin-top: 100px;
+}
+#chekout-form .form-head {
+  border-top: 1px solid #353535;
+  border-bottom: 1px solid #444;
+}
+#chekout-form .form-head a {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #444444;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0px 20px;
+  text-transform: capitalize;
+  margin: 10px 0;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+#chekout-form .form-head a:first-of-type {
+  padding-left: 0;
+  border-right: 1px solid #444;
+}
+#chekout-form .form-head a:hover {
+  color: #de4644;
+}
+#chekout-form .form-head p {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0;
+}
+#chekout-form form {
+  margin-top: 30px;
+}
+#chekout-form form input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+#chekout-form form input:nth-of-type(2) {
+  width: 49%;
+  margin-right: 1%;
+}
+#chekout-form form input:nth-of-type(3) {
+  width: 49%;
+}
+#chekout-form form input:last-of-type {
+  height: 150px;
+  line-height: 0px;
+}
+#chekout-form form textarea {
+  width: 100%;
+  height: 300px;
+  padding-left: 10px;
+}
+#chekout-form .cart-total .cart-head {
+  border: 1px solid #353535;
+}
+#chekout-form .cart-total .cart-head h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #222222;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 5px;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+#chekout-form .cart-total .cart-box ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
+  border-bottom: 1px solid #777;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+#chekout-form .cart-total .cart-box ul:hover {
+  border-bottom-color: #de4644;
+}
+#chekout-form .cart-total .cart-box ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #222222;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 10px;
+  text-transform: capitalize;
+  display: block;
+}
+#chekout-form .cart-total .cart-box ul li i {
+  font-size: 13px;
+  color: #777777;
+}
+#chekout-form .payment {
+  margin-top: 35px;
+}
+#chekout-form .payment .payment-head {
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+}
+#chekout-form .payment .payment-head h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #222222;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+#chekout-form .payment .payment-form {
+  padding-top: 20px;
+}
+#chekout-form .payment .payment-form input {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+#chekout-form .payment .payment-form label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+#chekout-form .payment .payment-form p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding: 5px 0 10px 0;
+}
+#chekout-form .payment .payment-form a {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  background: #de4644;
+  border: 1px solid #de4644;
+  margin-top: 32px;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+#chekout-form .payment .payment-form a:hover {
+  background: transparent;
+  color: black;
+  border: 1px solid #de4644;
+}
+/* =====***** chekout forms css ends *****===== */
+/* =====***** ----- chekout page css ends ------ *****===== */
