@@ -1,0 +1,937 @@
+        /* =====***** extra small device responsive starts *****===== */
+        
+        @media (max-width: 575px) {
+            /* ----- header & menu extra small device responsive starts ----- */
+            #back-to-top a {
+                display: none !important;
+            }
+            #header-bg {
+                display: none !important;
+            }
+            .navbar .navbar-nav {
+                background: rgba(0, 0, 0, 70%) !important;
+                display: flex;
+            }
+            .navbar .navbar-nav .nav-item .nav-link {
+                display: block;
+                padding: 10px 0;
+                margin: 0;
+            }
+            .navbar .navbar-nav .nav-item .nav-link:hover {
+                color: white !important;
+                background: black;
+            }
+            .navbar .navbar-nav .nav-item .nav-link::after {
+                display: none !important;
+            }
+            .navbar-collapse {
+                text-align: center !important;
+            }
+            .navbar .navbar-nav .nav-item button {
+                margin-left: 0 !important;
+                display: none;
+            }
+            .navbar .navbar-nav .nav-item:last-of-type {
+                padding-left: 100px !important;
+            }
+            /* ----- header & menu extra small device responsive ends ----- */
+            /* ----- banner extra small device responsive starts ----- */
+            #banner-bg .item {
+                height: 530px !important;
+            }
+            #banner-bg .banner-text h2 {
+                font-size: 50px !important;
+                padding-top: 40px !important;
+            }
+            #banner-bg .banner-text h3 {
+                font-size: 40px !important;
+                padding-top: 10px;
+            }
+            #banner-bg .banner-text a {
+                margin-bottom: 0 !important;
+                margin-right: 0px !important;
+            }
+            #banner-bg .prevarrow {
+                display: none !important;
+            }
+            #banner-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- banner extra small device responsive ends ----- */
+            /* ----- shope extra small device responsive starts ----- */
+            #shope-bg {
+                margin-top: 20px !important;
+            }
+            /* ----- shope extra small device responsive ends ----- */
+            /* ----- products extra small device responsive starts ----- */
+            #products-bg {
+                margin-top: 30px !important;
+            }
+            #products-bg .products-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 30px;
+            }
+            #products-bg .products-head h4::before {
+                left: 45px !important;
+            }
+            #products-bg .products-head h4::after {
+                left: 45px !important;
+            }
+            #products-bg .filter-menu .nav .nav-item {
+                margin-bottom: 15px !important;
+                margin-right: 0 !important;
+            }
+            /* ----- products extra small device responsive ends ----- */
+            /* ----- countdown extra small device responsive starts ----- */
+            #countdown-bg {
+                margin-top: 30px !important;
+            }
+            #countdown-bg .item-2 .text h4 {
+                padding-top: 20px !important;
+            }
+            #countdown-bg .item-2 .text h2 {
+                font-size: 26px !important;
+            }
+            #countdown-bg .item-2 #countdown ul li p {
+                padding-top: 0 !important;
+                font-size: 14px !important;
+            }
+            /* ----- countdown extra small device responsive ends ----- */
+            /* ----- up-product extra small device responsive starts ----- */
+            #up-product-bg {
+                margin-top: 30px !important;
+            }
+            #up-product-bg .up-products-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 50px !important;
+                text-align: center !important;
+            }
+            #up-product-bg .up-products-head h4::before {
+                left: 50px !important;
+            }
+            #up-product-bg .up-products-head h4::after {
+                left: 50px !important;
+            }
+            #up-product-bg .up-product-slider .box {
+                padding-right: 10px !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay {
+                width: 60% !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul {
+                padding-top: 10px !important;
+                text-align: center !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul li {
+                width: 40px !important;
+                height: 40px !important;
+                margin-bottom: 10px !important;
+            }
+            #up-product-bg .up-product-slider .box .products-rate ul:first-of-type li {
+                font-size: 11px !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul li a i {
+                font-size: 16px !important;
+            }
+            /* ----- up-product extra small device responsive ends ----- */
+            /* ----- testimonials extra small device responsive starts ----- */
+            #testimonials-bg {
+                padding: 50px 0 60px 0 !important;
+            }
+            #testimonials-head {
+                margin-top: 40px !important;
+            }
+            #testimonials-head .testimonials-head h4 {
+                text-align: center !important;
+                font-size: 24px !important;
+                margin-bottom: 30px !important;
+            }
+            #testimonials-head .testimonials-head h4::before {
+                display: none !important;
+            }
+            #testimonials-head .testimonials-head h4::after {
+                display: none !important;
+            }
+            #testimonials-bg .prevarrow {
+                display: none !important;
+            }
+            #testimonials-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- testimonials extra small device responsive ends ----- */
+            /* ----- blog extra small device responsive starts ----- */
+            #blog-bg {
+                margin-top: 40px !important;
+            }
+            #blog-bg .blog-head h4 {
+                text-align: center !important;
+                font-size: 24px !important;
+                margin-bottom: 40px !important;
+            }
+            #blog-bg .blog-head h4::before {
+                display: none !important;
+            }
+            #blog-bg .blog-head h4::after {
+                display: none !important;
+            }
+            #blog-bg .item .img .overlay ul:nth-of-type(2) li {
+                text-align: center;
+                margin-top: 60px !important;
+            }
+            #blog-bg .item .img .overlay ul:last-of-type {
+                margin-top: 60px !important;
+            }
+            /* ----- blog extra small device responsive ends ----- */
+            /* ----- footer extra small device responsive starts ----- */
+            #footer-bg {
+                margin-top: 40px !important;
+                padding: 30px 0 !important;
+            }
+            #copyright .text ul {
+                flex-direction: column !important;
+            }
+            #copyright .text ul li p {
+                font-size: 13px !important;
+            }
+            #copyright .text ul li:last-of-type {
+                padding-top: 20px !important;
+            }
+            /* ----- footer extra small device responsive ends ----- */
+            /* ----- about page extra small device responsive starts ----- */
+            #about-prosucts {
+                display: none !important;
+            }
+            #designer-team .designer-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 30px !important;
+                text-align: center !important;
+            }
+            #designer-team .designer-head h4::before {
+                display: none !important;
+            }
+            #designer-team .designer-head h4::after {
+                display: none !important;
+            }
+            #designer-team {
+                margin: 30px 0 !important;
+            }
+            #designer-team .item {
+                margin-bottom: 20px !important;
+            }
+            #sponsor-bg {
+                margin-top: 30px !important;
+                margin-bottom: 40px !important;
+            }
+            #sponsor-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- about page extra small device responsive ends ----- */
+            /* ----- products details page extra small device responsive starts ----- */
+            #pd-details-bg {
+                margin-top: 40px !important;
+            }
+            #pd-details-bg .product-details .product-head h4 {
+                font-size: 16px !important;
+            }
+            #pd-details-bg .product-details .product-head .pt-40 {
+                padding-top: 20px !important;
+            }
+            #pd-details-bg .product-details .color-size {
+                padding-top: 10px !important;
+            }
+            #pd-details-bg .product-details .color-size .icon {
+                padding-top: 25px !important;
+            }
+            #pd-details-bg .product-details .color-size .catagory {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-details .color-size .social-icon {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-description {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-description p {
+                padding-top: 20px !important;
+                padding-right: 10px !important;
+            }
+            /* ----- products details page extra small device responsive ends ----- */
+            /* ----- contact page extra small device responsive starts ----- */
+            #contact-form {
+                padding-top: 40px !important;
+            }
+            #contact-form .contact-address .text p:first-of-type {
+                margin-top: 0px !important;
+            }
+            #contact-form form input:first-of-type {
+                margin-right: 0% !important;
+            }
+            #contact-form form input:nth-of-type(3) {
+                margin-right: 0% !important;
+            }
+            #contact-form .contact-address {
+                padding-top: 20px !important;
+            }
+            #contact-map {
+                margin-top: 30px !important;
+            }
+            /* ----- contact page extra small device responsive ends ----- */
+            /* ----- chekout page extra small device responsive starts ----- */
+            #chekout-form .form-head a {
+                font-size: 16px !important;
+                padding: 0px 7px !important;
+            }
+            #chekout-form form input:nth-of-type(2) {
+                width: 100% !important;
+                margin-right: 1%;
+            }
+            #chekout-form form input:nth-of-type(3) {
+                width: 100% !important;
+            }
+            #chekout-form form input:last-of-type {
+                height: 80px !important;
+            }
+            /* ----- chekout page extra small device responsive ends ----- */
+            /* ----- shope page extra small device responsive ends ----- */
+            #shope-item-bg {
+                display: none !important;
+            }
+            /* ----- shope page extra small device responsive ends ----- */
+        }
+        /* =====***** extra small device responsive starts *****===== */
+        /* =====***** small device responsive starts *****===== */
+        
+        @media (min-width: 576px) and (max-width: 767px) {
+            /* ----- header & menu small device responsive starts ----- */
+            #back-to-top a {
+                display: none !important;
+            }
+            #header-bg {
+                display: none !important;
+            }
+            .navbar .navbar-nav {
+                background: rgba(0, 0, 0, 70%) !important;
+                display: flex;
+            }
+            .navbar .navbar-nav .nav-item .nav-link {
+                display: block;
+                padding: 10px 0;
+                margin: 0;
+            }
+            .navbar .navbar-nav .nav-item .nav-link:hover {
+                color: white !important;
+                background: black;
+            }
+            .navbar .navbar-nav .nav-item .nav-link::after {
+                display: none !important;
+            }
+            .navbar-collapse {
+                text-align: center !important;
+            }
+            .navbar .navbar-nav .nav-item button {
+                margin-left: 0 !important;
+                display: none;
+            }
+            .navbar .navbar-nav .nav-item:last-of-type {
+                padding-left: 220px !important;
+            }
+            /* ----- header & menu small device responsive ends ----- */
+            /* ----- banner small device responsive starts ----- */
+            #banner-bg .item {
+                height: 500px !important;
+            }
+            #banner-bg .banner-text h2 {
+                font-size: 50px !important;
+                padding-top: 40px !important;
+            }
+            #banner-bg .banner-text h3 {
+                font-size: 40px !important;
+                padding-top: 10px;
+            }
+            #banner-bg .banner-text a {
+                margin-bottom: 0 !important;
+                margin-right: 0px !important;
+            }
+            #banner-bg .prevarrow {
+                display: none !important;
+            }
+            #banner-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- banner small device responsive ends ----- */
+            /* ----- shope small device responsive starts ----- */
+            #shope-bg {
+                margin-top: 20px !important;
+            }
+            /* ----- shope small device responsive ends ----- */
+            /* ----- products small device responsive starts ----- */
+            #products-bg {
+                margin-top: 30px !important;
+            }
+            #products-bg .products-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 30px !important;
+            }
+            #products-bg .products-head h4::before {
+                left: 155px !important;
+                bottom: -10px !important;
+            }
+            #products-bg .products-head h4::after {
+                left: 155px !important;
+                bottom: -15px !important;
+            }
+            #products-bg .filter-menu .nav .nav-item {
+                margin-bottom: 15px !important;
+                margin-right: 0 !important;
+            }
+            /* ----- products small device responsive ends ----- */
+            /* ----- countdown small device responsive starts ----- */
+            #countdown-bg {
+                margin-top: 30px !important;
+            }
+            #countdown-bg .item-2 .text h4 {
+                padding-top: 10px !important;
+            }
+            #countdown-bg .item-2 .text h2 {
+                font-size: 32px !important;
+            }
+            #countdown-bg .item-2 #countdown ul li p {
+                padding-top: 0 !important;
+                font-size: 22px !important;
+            }
+            /* ----- countdown small device responsive ends ----- */
+            /* ----- up-product small device responsive starts ----- */
+            #up-product-bg {
+                margin-top: 30px !important;
+            }
+            #up-product-bg .up-products-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 50px !important;
+                text-align: center !important;
+            }
+            #up-product-bg .up-products-head h4::before {
+                left: 155px !important;
+            }
+            #up-product-bg .up-products-head h4::after {
+                left: 155px !important;
+            }
+            #up-product-bg .up-product-slider .box {
+                padding-right: 10px !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay {
+                width: 60% !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul {
+                padding-top: 20px !important;
+                text-align: center !important;
+            }
+            #up-product-bg .up-product-slider .box {
+                margin-bottom: 20px !important;
+            }
+            #up-product-bg .up-product-slider .box .products-rate ul:first-of-type li {
+                font-size: 11px !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul li {
+                width: 40px !important;
+                height: 40px !important;
+                line-height: 40px !important;
+                margin-bottom: 20px !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul li a i {
+                font-size: 20px !important;
+            }
+            /* ----- up-product small device responsive ends ----- */
+            /* ----- testimonials small device responsive starts ----- */
+            #testimonials-bg {
+                padding: 50px 0 60px 0 !important;
+            }
+            #testimonials-head {
+                margin-top: 40px !important;
+            }
+            #testimonials-head .testimonials-head h4 {
+                text-align: center !important;
+                font-size: 24px !important;
+                margin-bottom: 30px !important;
+            }
+            #testimonials-head .testimonials-head h4::before {
+                display: none !important;
+            }
+            #testimonials-head .testimonials-head h4::after {
+                display: none !important;
+            }
+            #testimonials-bg .prevarrow {
+                display: none !important;
+            }
+            #testimonials-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- testimonials small device responsive ends ----- */
+            /* ----- blog small device responsive starts ----- */
+            #blog-bg {
+                margin-top: 40px !important;
+            }
+            #blog-bg .blog-head h4 {
+                text-align: center !important;
+                font-size: 24px !important;
+                margin-bottom: 40px !important;
+            }
+            #blog-bg .blog-head h4::before {
+                display: none !important;
+            }
+            #blog-bg .blog-head h4::after {
+                display: none !important;
+            }
+            #blog-bg .item .img .overlay ul:nth-of-type(2) li {
+                margin-top: 120px !important;
+            }
+            #blog-bg .item .img .overlay ul:last-of-type {
+                margin-top: 120px !important;
+            }
+            /* ----- blog small device responsive ends ----- */
+            /* ----- footer small device responsive starts ----- */
+            #footer-bg {
+                margin-top: 40px !important;
+                padding: 30px 0 !important;
+            }
+            #copyright .text ul {
+                flex-direction: row !important;
+            }
+            #copyright .text ul li p {
+                font-size: 12px !important;
+            }
+            #copyright .text ul li:last-of-type {
+                padding-top: 8px !important;
+            }
+            /* ----- footer small device responsive ends ----- */
+            /* ----- about page small device responsive starts ----- */
+            #about-prosucts {
+                display: none !important;
+            }
+            #designer-team .designer-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 30px !important;
+                text-align: center !important;
+            }
+            #designer-team .designer-head h4::before {
+                display: none !important;
+            }
+            #designer-team .designer-head h4::after {
+                display: none !important;
+            }
+            #designer-team {
+                margin: 30px 0 !important;
+            }
+            #designer-team .item {
+                margin-bottom: 20px !important;
+            }
+            #sponsor-bg {
+                margin-top: 30px !important;
+                margin-bottom: 40px !important;
+            }
+            #sponsor-bg .nextarrow {
+                display: none !important;
+            }
+            #designer-team .item .img-section .overlay {
+                width: 20% !important;
+            }
+            #designer-team .item .img-section .overlay ul {
+                padding-top: 140px !important;
+            }
+            /* ----- about page small device responsive ends ----- */
+            /* ----- products details page small device responsive starts ----- */
+            #pd-details-bg {
+                margin-top: 40px !important;
+            }
+            #pd-details-bg .product-details .product-head h4 {
+                font-size: 16px !important;
+            }
+            #pd-details-bg .product-details .product-head .pt-40 {
+                padding-top: 20px !important;
+            }
+            #pd-details-bg .product-details .color-size {
+                padding-top: 10px !important;
+            }
+            #pd-details-bg .product-details .color-size .icon {
+                padding-top: 25px !important;
+            }
+            #pd-details-bg .product-details .color-size .catagory {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-details .color-size .social-icon {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-description {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-description p {
+                padding-top: 20px !important;
+                padding-right: 10px !important;
+            }
+            /* ----- products details page small device responsive ends ----- */
+            /* ----- contact page small device responsive starts ----- */
+            #contact-form {
+                padding-top: 40px !important;
+            }
+            #contact-form .contact-address .text p:first-of-type {
+                margin-top: 0px !important;
+            }
+            #contact-form form input:first-of-type {
+                margin-right: 0% !important;
+            }
+            #contact-form form input:nth-of-type(3) {
+                margin-right: 0% !important;
+            }
+            #contact-form .contact-address {
+                padding-top: 20px !important;
+            }
+            #contact-map {
+                margin-top: 30px !important;
+            }
+            /* ----- contact page small device responsive ends ----- */
+            /* ----- chekout page small device responsive starts ----- */
+            #chekout-form .form-head a {
+                font-size: 16px !important;
+                padding: 0px 7px !important;
+            }
+            #chekout-form form input:nth-of-type(2) {
+                width: 100% !important;
+                margin-right: 1%;
+            }
+            #chekout-form form input:nth-of-type(3) {
+                width: 100% !important;
+            }
+            #chekout-form form input:last-of-type {
+                height: 80px !important;
+            }
+            /* ----- chekout page small device responsive ends ----- */
+            /* ----- shope page small device responsive ends ----- */
+            #shope-item-bg {
+                display: none !important;
+            }
+            /* ----- shope page small device responsive ends ----- */
+        }
+        /* =====***** small device responsive starts *****===== */
+        /* =====***** medium device responsive starts *****===== */
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+            /* ----- header & menu small device responsive starts ----- */
+            #back-to-top a {
+                display: none !important;
+            }
+            #header-bg {
+                display: none !important;
+            }
+            .navbar .navbar-nav {
+                background: rgba(0, 0, 0, 70%) !important;
+                display: flex;
+            }
+            .navbar .navbar-nav .nav-item .nav-link {
+                display: block;
+                padding: 10px 0;
+                margin: 0;
+            }
+            .navbar .navbar-nav .nav-item .nav-link:hover {
+                color: white !important;
+                background: black;
+            }
+            .navbar .navbar-nav .nav-item .nav-link::after {
+                display: none !important;
+            }
+            .navbar-collapse {
+                text-align: center !important;
+            }
+            .navbar .navbar-nav .nav-item button {
+                margin-left: 0 !important;
+                display: none;
+            }
+            .navbar .navbar-nav .nav-item:last-of-type {
+                padding-left: 300px !important;
+            }
+            /* ----- header & menu small device responsive ends ----- */
+            /* ----- banner small device responsive starts ----- */
+            #banner-bg .item {
+                height: 500px !important;
+            }
+            #banner-bg .banner-text h2 {
+                font-size: 50px !important;
+                padding-top: 40px !important;
+            }
+            #banner-bg .banner-text h3 {
+                font-size: 40px !important;
+                padding-top: 10px;
+            }
+            #banner-bg .banner-text a {
+                margin-bottom: 0 !important;
+                margin-right: 0px !important;
+            }
+            #banner-bg .prevarrow {
+                display: none !important;
+            }
+            #banner-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- banner small device responsive ends ----- */
+            /* ----- shope small device responsive starts ----- */
+            #shope-bg {
+                margin-top: 20px !important;
+            }
+            /* ----- shope small device responsive ends ----- */
+            /* ----- products small device responsive starts ----- */
+            #products-bg {
+                margin-top: 30px !important;
+            }
+            #products-bg .products-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 30px !important;
+            }
+            #products-bg .products-head h4::before {
+                left: 155px !important;
+                bottom: -10px !important;
+            }
+            #products-bg .products-head h4::after {
+                left: 155px !important;
+                bottom: -15px !important;
+            }
+            #products-bg .filter-menu .nav .nav-item {
+                margin-bottom: 15px !important;
+                margin-right: 0 !important;
+            }
+            /* ----- products small device responsive ends ----- */
+            /* ----- countdown small device responsive starts ----- */
+            #countdown-bg {
+                margin-top: 30px !important;
+            }
+            #countdown-bg .item-2 .text h4 {
+                padding-top: 10px !important;
+            }
+            #countdown-bg .item-2 .text h2 {
+                font-size: 32px !important;
+            }
+            #countdown-bg .item-2 #countdown ul li p {
+                padding-top: 0 !important;
+                font-size: 22px !important;
+            }
+            /* ----- countdown small device responsive ends ----- */
+            /* ----- up-product small device responsive starts ----- */
+            #up-product-bg {
+                margin-top: 30px !important;
+            }
+            #up-product-bg .up-products-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 50px !important;
+                text-align: center !important;
+            }
+            #up-product-bg .up-products-head h4::before {
+                left: 155px !important;
+            }
+            #up-product-bg .up-products-head h4::after {
+                left: 155px !important;
+            }
+            #up-product-bg .up-product-slider .box {
+                padding-right: 10px !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay {
+                width: 60% !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul {
+                padding-top: 20px !important;
+                text-align: center !important;
+            }
+            #up-product-bg .up-product-slider .box {
+                margin-bottom: 20px !important;
+            }
+            #up-product-bg .up-product-slider .box .products-rate ul:first-of-type li {
+                font-size: 11px !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul li {
+                width: 40px !important;
+                height: 40px !important;
+                line-height: 40px !important;
+                margin-bottom: 20px !important;
+            }
+            #up-product-bg .up-product-slider .box .img-section .overlay ul li a i {
+                font-size: 20px !important;
+            }
+            #up-product-bg .prevarrow {
+                display: none !important;
+            }
+            #up-product-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- up-product small device responsive ends ----- */
+            /* ----- testimonials small device responsive starts ----- */
+            #testimonials-bg {
+                padding: 50px 0 60px 0 !important;
+            }
+            #testimonials-head {
+                margin-top: 40px !important;
+            }
+            #testimonials-head .testimonials-head h4 {
+                text-align: center !important;
+                font-size: 24px !important;
+                margin-bottom: 30px !important;
+            }
+            #testimonials-head .testimonials-head h4::before {
+                display: none !important;
+            }
+            #testimonials-head .testimonials-head h4::after {
+                display: none !important;
+            }
+            #testimonials-bg .prevarrow {
+                display: none !important;
+            }
+            #testimonials-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- testimonials small device responsive ends ----- */
+            /* ----- blog small device responsive starts ----- */
+            #blog-bg {
+                margin-top: 40px !important;
+            }
+            #blog-bg .blog-head h4 {
+                text-align: center !important;
+                font-size: 24px !important;
+                margin-bottom: 40px !important;
+            }
+            #blog-bg .blog-head h4::before {
+                display: none !important;
+            }
+            #blog-bg .blog-head h4::after {
+                display: none !important;
+            }
+            #blog-bg .item .img .overlay ul:nth-of-type(2) li {
+                margin-top: 120px !important;
+            }
+            #blog-bg .item .img .overlay ul:last-of-type {
+                margin-top: 120px !important;
+            }
+            /* ----- blog small device responsive ends ----- */
+            /* ----- footer small device responsive starts ----- */
+            #footer-bg {
+                margin-top: 40px !important;
+                padding: 30px 0 !important;
+            }
+            #copyright .text ul {
+                flex-direction: row !important;
+            }
+            #copyright .text ul li p {
+                font-size: 12px !important;
+            }
+            #copyright .text ul li:last-of-type {
+                padding-top: 8px !important;
+            }
+            /* ----- footer small device responsive ends ----- */
+            /* ----- about page small device responsive starts ----- */
+            #about-prosucts {
+                display: none !important;
+            }
+            #designer-team .designer-head h4 {
+                font-size: 24px !important;
+                margin-bottom: 30px !important;
+                text-align: center !important;
+            }
+            #designer-team .designer-head h4::before {
+                display: none !important;
+            }
+            #designer-team .designer-head h4::after {
+                display: none !important;
+            }
+            #designer-team {
+                margin: 30px 0 !important;
+            }
+            #designer-team .item {
+                margin-bottom: 20px !important;
+            }
+            #sponsor-bg {
+                margin-top: 30px !important;
+                margin-bottom: 40px !important;
+            }
+            #sponsor-bg .nextarrow {
+                display: none !important;
+            }
+            #designer-team .item .img-section .overlay {
+                width: 20% !important;
+            }
+            #designer-team .item .img-section .overlay ul {
+                padding-top: 140px !important;
+            }
+            /* ----- about page small device responsive ends ----- */
+            /* ----- products details page small device responsive starts ----- */
+            #pd-details-bg {
+                margin-top: 40px !important;
+            }
+            #pd-details-bg .product-details .product-head h4 {
+                font-size: 16px !important;
+            }
+            #pd-details-bg .product-details .product-head .pt-40 {
+                padding-top: 20px !important;
+            }
+            #pd-details-bg .product-details .color-size {
+                padding-top: 10px !important;
+            }
+            #pd-details-bg .product-details .color-size .icon {
+                padding-top: 25px !important;
+            }
+            #pd-details-bg .product-details .color-size .catagory {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-details .color-size .social-icon {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-description {
+                padding-top: 30px !important;
+            }
+            #pd-details-bg .product-description p {
+                padding-top: 20px !important;
+                padding-right: 10px !important;
+            }
+            /* ----- products details page small device responsive ends ----- */
+            /* ----- contact page small device responsive starts ----- */
+            #contact-form {
+                padding-top: 40px !important;
+            }
+            #contact-form .contact-address .text p:first-of-type {
+                margin-top: 0px !important;
+            }
+            #contact-form form input:first-of-type {
+                margin-right: 0% !important;
+            }
+            #contact-form form input:nth-of-type(3) {
+                margin-right: 0% !important;
+            }
+            #contact-form .contact-address {
+                padding-top: 20px !important;
+            }
+            #contact-map {
+                margin-top: 30px !important;
+            }
+            /* ----- contact page small device responsive ends ----- */
+            /* ----- chekout page small device responsive starts ----- */
+            #chekout-form .form-head a {
+                font-size: 16px !important;
+                padding: 0px 7px !important;
+            }
+            #chekout-form form input:nth-of-type(2) {
+                width: 100% !important;
+                margin-right: 1%;
+            }
+            #chekout-form form input:nth-of-type(3) {
+                width: 100% !important;
+            }
+            #chekout-form form input:last-of-type {
+                height: 80px !important;
+            }
+            #sponsor-bg .prevarrow {
+                display: none !important;
+            }
+            #sponsor-bg .nextarrow {
+                display: none !important;
+            }
+            /* ----- chekout page small device responsive ends ----- */
+            /* ----- shope page small device responsive ends ----- */
+            #shope-item-bg {
+                display: show !important;
+            }
+            /* ----- shope page small device responsive ends ----- */
+        }
+        /* =====***** medium device responsive ends *****===== */

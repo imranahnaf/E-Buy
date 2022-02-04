@@ -1,14 +1,25 @@
 $(document).ready(function() {
     'use strict';
 
+
     // =====***** prelader js starts *****=====//
-    $(window).load(function() {
-        $('#preloader-bg').fadeIn(500).delay(1000).css('display', 'flex');
-    });
-    $(window).load(function() {
-        $('#preloader-bg').fadeOut(1000).css('display', 'flex');
-    });
+    $('#preloader-bg').delay(1000).fadeOut(1000);
     // =====***** prelader js ends *****=====//
+
+
+    // =====***** back to top button js starts *****=====//
+    $(window).scroll(function() {
+        var scrolling = $(this).scrollTop();
+
+        if (scrolling >= 900) {
+            $('#back-to-top').show();
+        } else {
+            $('#back-to-top').hide();
+        }
+    });
+    // =====***** back to top button js ends *****=====//
+
+
 
     // =====***** countdown js starts *****=====//
     (function() {
@@ -63,12 +74,13 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 1000,
+        delay: 1000,
         prevArrow: '<i class="fa fa-angle-left prevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right nextarrow"></i>',
 
         // the magic
         responsive: [{
-            breakpoint: 767,
+            breakpoint: 575,
             settings: {
                 autoplay: true,
                 infinite: true,
@@ -100,8 +112,7 @@ $(document).ready(function() {
                 slidesToScroll: 1,
                 autoplaySpeed: 1000,
             }
-
-        }]
+        }, ]
     });
     // =====***** banner slider & responsive js ends *****=====//
 
@@ -121,32 +132,34 @@ $(document).ready(function() {
 
         // the magic
         responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                infinite: true
-            }
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true
+                }
 
-        }, {
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    dots: false,
+                }
 
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                dots: true
-            }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                }
 
-        }, {
-
-            breakpoint: 300,
-            settings: "unslick" // destroys slick
-
-        }]
+            },
+        ]
     });
     // =====***** update products slider & responsive js ends *****=====//
 
 
 
-    // =====***** update products slider & responsive js starts *****=====//
+    // =====***** testimonials slider & responsive js starts *****=====//
     $(".testimonials-slider").slick({
         // normal options...
         autoplay: true,
@@ -160,28 +173,22 @@ $(document).ready(function() {
 
         // the magic
         responsive: [{
-            breakpoint: 1024,
+            breakpoint: 575,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
                 infinite: true
             }
-
         }, {
 
-            breakpoint: 600,
+            breakpoint: 767,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 dots: true
             }
 
-        }, {
-
-            breakpoint: 300,
-            settings: "unslick" // destroys slick
-
-        }]
+        }, ]
     });
-    // =====***** update products slider & responsive js ends *****=====//
+    // =====***** testimonials slider & responsive js ends *****=====//
 
 
 
@@ -197,9 +204,9 @@ $(document).ready(function() {
         centerPadding: '0px',
 
         responsive: [{
-                breakpoint: 992,
+                breakpoint: 575,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false,
@@ -207,18 +214,7 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false,
-                    arrows: false,
-                    centerMode: false,
-                }
-            },
-            {
-                breakpoint: 576,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -227,10 +223,7 @@ $(document).ready(function() {
                     arrows: false,
                     centerMode: false,
                 }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+            },
         ]
     });
     // ======== *****about sponsor slider & responsive js ends***** ======== //
@@ -242,7 +235,7 @@ $(document).ready(function() {
         infinite: true,
         dots: false,
         slidesToShow: 1,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         autoplaySpeed: 1000,
         draggable: false,
         arrows: false,
@@ -297,7 +290,7 @@ $(document).ready(function() {
         infinite: true,
         dots: false,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         autoplaySpeed: 1000,
         draggable: false,
         arrows: false,
@@ -363,8 +356,6 @@ $(document).ready(function() {
     // =====*****  forms js starts *****=====//
     $("input[type='number']").inputSpinner();
     // =====*****  forms js ends *****=====//
-
-
 
 
 

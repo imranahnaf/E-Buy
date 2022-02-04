@@ -15,6 +15,7 @@
   img {
       vertical-align: middle;
   }
+
   /* =====***** common css ends *****===== */
 
   /* variable starts */
@@ -29,15 +30,48 @@
   #preloader-bg {
     width: 100%;
     height: 100vh;
-    background: black url(../images/Loader-Flash-of-Light.gif) no-repeat center / cover;
+    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 99999999999999;
-    display: none;
+    z-index: 9999999999999999999;
+    img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 }
   /* preloader ends */ 
+
+
+  /* back to top button css starts */ 
+  #back-to-top {
+    a {
+      width: 60px;
+      height: 60px;
+      background: transparent;
+      line-height: 60px;
+      text-align: center;
+      border: 5px solid @brandcolor;
+      border-radius: 50%;
+      color: @brandcolor;
+      position: fixed;
+      right: 30px;
+      bottom: 60px;
+      z-index: 9999999;
+      transition: all linear 0.5s;
+      &:hover {
+        background: @brandcolor;
+        color: white;
+      }
+      i {
+        font-size: 32px;
+      }
+    }
+  }
+  /* back to top button css ends */ 
+
 
   /* =====***** header css starts *****===== */
   #header-bg {
@@ -127,7 +161,11 @@
                      font-size: 18px;
                  }
              }
-             i {
+             a {
+              display: inline-block;
+              color: none;
+              display: flex;
+              i {
                 padding: 8px 0px;
                 font-size: 18px;
                 line-height: 24px;
@@ -142,6 +180,7 @@
              &:last-of-type {
                  margin-top: 5px;
                  color: @brandcolor;
+             }
              }
           }
       }
@@ -1093,7 +1132,7 @@
           }
         }
       }
-      .form-item {
+      .item-4 {
         .text {
          form {
            position: relative;
@@ -1110,9 +1149,6 @@
             border: 1px solid @brandcolor;
             background: @brandcolor;
             padding: 0 5px;
-            position: absolute;
-            top: 25px;
-            right: 32px;
            }
          }
          ul {
@@ -2080,9 +2116,273 @@
        }
        /* =====***** chekout forms css ends *****===== */
 
-
-
-
-
-
        /* =====***** ----- chekout page css ends ------ *****===== */
+
+
+
+       /* =====***** ----- shoping cart page css starts ------ *****===== */
+
+       /* =====***** ----- single item setcion css starts ------ *****===== */
+       #shope-item-bg {
+         padding-top: 100px;
+
+        .form-cheek {
+          .input-group {
+            width: 60px;
+            height: 40px;
+            border: none;
+            display: block;
+            position: relative;
+            margin-left: 35px;
+
+            input {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #222;
+            padding: 0 !important;
+            position: absolute;
+            top: 0;
+            left: 0;
+            }
+
+            .form-control {
+            padding: 0 !important;
+            margin-left: 0 !important;
+            border-radius: 0;
+            }
+
+            .btn-plus {
+              min-width: 20px !important;
+              height: 20px;
+              text-align: center;
+              line-height: 0px;
+              background: transparent;
+              border-radius: 0;
+              padding: 0 !important;
+              position: absolute;
+              top: 0;
+              right: 0;
+              transition: all linear 0.5s;
+            strong {
+              color: #222;
+              transition: all linear 0.5s;
+            }
+            &:hover {
+              background: @brandcolor;
+              strong {
+                color: white;
+              }
+            }
+              }
+
+            .btn-minus {
+            min-width: 20px !important;
+            height: 20px;
+            text-align: center;
+            line-height: 0px;
+            background: transparent;
+            border-radius: 0;
+            padding: 0 !important;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: all linear 0.5s;
+            strong {
+              color: #222;
+              transition: all linear 0.5s;
+            }
+            &:hover {
+              background: @brandcolor;
+              strong {
+                color: white;
+              }
+            }
+           }
+          }
+        }
+
+
+        .single-item {
+          table {
+
+            tr {
+              td {
+                border: 1px solid #7777;
+                text-align: center;
+                table {
+                  tr {
+                    td {
+                      text-align: left;
+                      border: none;
+                    }
+                  }
+                }
+              }
+            }
+
+
+            .heading {
+              td {
+                padding: 20px;
+                font-family: @ralewayfont;
+                font-weight: 500;
+                color: #222222;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: capitalize;
+                margin-bottom: 0;
+              }
+              .product-color {
+                text-align: left;
+                padding-left: 10px;
+              }
+            }
+            
+
+            .products {
+              .image {
+                padding: 10px;
+                .details {
+                  padding-left: 10px;
+                  h5 {
+                    font-family: @ralewayfont;
+                    font-weight: 500;
+                    color: #222222;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+                  }
+                  a {
+                    color: @brandcolor;
+                  }
+                  p {
+                    font-family: @ralewayfont;
+                    font-weight: 500;
+                    color: #444;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+                  }
+                }
+              }
+
+              .remove-item {
+                  i {
+                    transition: all linear 0.5s;
+                    font-size: 22px;
+                    &:hover {
+                      color: @brandcolor;
+                    }
+                  }
+              }
+            }
+          }
+        }
+        .submit-forms {
+          .cart-item  {
+            h4 {
+              font-family: @ralewayfont;
+                  font-weight: 500;
+                  color: #353535;
+                  font-size: 20px;
+                  line-height: 24px;
+                  text-transform: capitalize;
+                  margin-bottom: 0;
+            }
+            ul {
+              display: flex;
+              justify-content: space-between;
+              padding: 10px;
+              border: 1px solid #353535;
+              margin: 0;
+              transition: all linear 0.5s;
+
+              &:hover {
+                border-bottom-color: @brandcolor;
+              }
+
+              li {
+                font-family: @ralewayfont;
+                font-weight: 500;
+                color: #444;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: capitalize;
+                margin-bottom: 0;
+                i {
+                  font-size: 14px;
+                }
+              }
+            }
+
+            form {
+              position: relative;
+              white-space: 0;
+              padding-top: 10px;
+              .email-btn {
+                height: 38px;
+                line-height: 38px;
+                padding-left: 10px;
+                color: #353535;
+                border: 1px solid #ddd;
+                background: transparent;
+              }
+              .submit-btn {
+                height: 38px;
+                line-height: 38px;
+               color: #ddd;
+               border: 1px solid @brandcolor;
+               background: @brandcolor;
+               padding: 0 5px;
+               
+              }
+            }
+
+            .head {
+              li {
+                font-family: @ralewayfont;
+                    font-weight: 500;
+                    color: #353535;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+              }
+            }
+          }
+          .item-2 {
+            margin-top: 50px;
+          }
+
+          .item-3 {
+            margin-top: 20px;
+            a {
+              display: inline-block;
+              font-family: @ralewayfont;
+              font-weight: 500;
+              color: #353535;
+              font-size: 16px;
+              line-height: 24px;
+              text-transform: capitalize;
+              margin-bottom: 0;
+              padding: 15px;
+              border: 1px solid #7777;
+              margin-right: 20px;
+              transition: all linear 0.5s;
+              &:hover {
+                color: white;
+                      background: @brandcolor;
+                      background-color: @brandcolor;
+                    }
+            }
+          }
+        }
+       }
+       /* =====***** ----- single item setcion css ends ------ *****===== */
+
+       /* =====***** ----- shoping cart page css ends ------ *****===== */
+
+
