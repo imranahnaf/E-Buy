@@ -133,6 +133,12 @@
             #up-product-bg .up-product-slider .box .img-section .overlay ul li a i {
                 font-size: 16px !important;
             }
+            #up-product-bg .prevarrow {
+                display: none !important;
+            }
+            #up-product-bg .nextarrow {
+                display: none !important;
+            }
             /* ----- up-product extra small device responsive ends ----- */
             /* ----- testimonials extra small device responsive starts ----- */
             #testimonials-bg {
